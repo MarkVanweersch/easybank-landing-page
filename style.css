@@ -246,10 +246,10 @@ body {
 /* footer */
 
 .footer-main {
+  position: relative;
   display: flex;
   gap: 7.5em;
-
-  padding-block: 2.5em;
+  padding-block: 2.5em 4em;
 }
 
 .footer-socials-container {
@@ -298,6 +298,20 @@ body {
 
 .footer-copyright {
   font-size: 0.8em;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  font-size: 0.8em;
+  color: var(--clr-ntr-white);
+}
+
+.attribution a {
+  color: inherit;
 }
 
 @media screen and (max-width: 1280px) {
@@ -528,6 +542,10 @@ body {
 
   .footer-button-copyright-container {
     align-items: center;
+  }
+
+  .attribution {
+    min-width: 250px;
   }
 
 }
